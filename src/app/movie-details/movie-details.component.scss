@@ -1,0 +1,19 @@
+.main-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    z-index: 1;
+
+    button {
+        width: 210px;
+    height: 66px;
+    font-size: 21px;
+    border-radius: 44;
+    border-radius: 10px
+    }
+}
+

@@ -1,0 +1,28 @@
+
+<div *ngIf="showSpinner" style="text-align: center;" class="spinner-div">
+    <mat-spinner class="spinner" [diameter]="50"></mat-spinner>
+
+</div> 
+<p class="movietype-header">
+    <mat-icon  (click)="goToPrev()" class="back-to-orders material-icons">arrow_back</mat-icon> 
+    <span >Upcoming Movies</span>
+
+</p>
+
+<div class="row">
+    <div class="col-md-3 col-xs-6" *ngFor="let movie of upComingMovies" >
+        <div class="card" >
+            <div class="card-body">
+                <div class="movie-title">
+                    <h5 class="card-title">{{ movie.original_title }}</h5>
+
+                </div>
+               
+                
+                    <button mat-raised-button color="primary" (click)="getMovieOverview(movie)">More Details</button>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
